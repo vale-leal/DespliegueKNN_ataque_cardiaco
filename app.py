@@ -28,8 +28,8 @@ import streamlit
 """
 
 #Cargamos los datos
-data = pd.read_excel("ataque_corazon.xlsx", sheet_name="Datos")
-data.head()
+#data = pd.read_excel("ataque_corazon.xlsx", sheet_name="Datos")
+#data.head()
 
 data.info()
 
