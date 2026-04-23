@@ -43,7 +43,9 @@ Smoking_Status = st.selectbox('smoking_status', ["Unknown", "'never smoked'", "'
 
 
 # Dataframe (también deben coincidir todos los nombres y el orden)
-datos = [[Age, Hypertension, Heart_Disease, Ever_Married, Avg_Glucose_Level, Smoking_Status]]
+datos = [[age, hypertension, heart_disease, ever_married, avg_glucose_level, smoking_status]]
+data = pd.DataFrame(datos, columns=['hypertension', 'heart_disease', 'ever_married', 'avg_glucose_level','smoking_status']) #Dataframe con los mismos nombres de variables
+
 
 #Se realiza la preparación
 data_preparada=data.copy()
