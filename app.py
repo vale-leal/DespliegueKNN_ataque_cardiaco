@@ -34,12 +34,12 @@ modelKnn, labelencoder,variables,min_max_scaler = pickle.load(open(filename, 'rb
 st.title('Predicción de ataque al corazón')
 
 # Opciones deben coincidir con los datos con los que se hizo el aprendizaje
-Age = st.slider('age', min_value=1, max_value=82, value=40, step=1) # Min/Max from data.describe()
-Hypertension = st.selectbox('hypertension', ['No', 'Yes'])
-Heart_Disease = st.selectbox('heart_disease', ['No', 'Yes'])
-Ever_Married = st.selectbox('ever_married', ['No', 'Yes'])
-Avg_Glucose_Level = st.slider('avg_glucose_level', min_value=55.0, max_value=272.0, value=100.0, step=0.1) # Min/Max from data.describe()
-Smoking_Status = st.selectbox('smoking_status', ["Unknown", "'never smoked'", "'formerly smoked'", "smokes"])
+age = st.slider('age', min_value=1, max_value=82, value=40, step=1) # Min/Max from data.describe()
+hypertension = st.selectbox('hypertension', ['No', 'Yes'])
+heart_disease = st.selectbox('heart_disease', ['No', 'Yes'])
+ever_married = st.selectbox('ever_married', ['No', 'Yes'])
+avg_glucose_level = st.slider('avg_glucose_level', min_value=55.0, max_value=272.0, value=100.0, step=0.1) # Min/Max from data.describe()
+smoking_status = st.selectbox('smoking_status', ["Unknown", "'never smoked'", "'formerly smoked'", "smokes"])
 
 
 # Dataframe (también deben coincidir todos los nombres y el orden)
