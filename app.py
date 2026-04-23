@@ -21,7 +21,6 @@ Original file is located at
 import pandas as pd # manipulacion dataframes
 import numpy as np  # matrices y vectores
 import matplotlib.pyplot as plt #gráfica
-!pip install streamlit
 import streamlit
 
 """# 1. Preparación de Datos
