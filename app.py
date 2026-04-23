@@ -25,8 +25,8 @@ import pickle
 filename = 'modelo-classKNN.pkl'
 modelKnn, labelencoder,variables,min_max_scaler = pickle.load(open(filename, 'rb'))
 
-data = pd.read_excel("ataque_cardíaco_futuros.xlsx")
-data.head()
+#data = pd.read_excel("ataque_cardíaco_futuros.xlsx")
+#data.head()
 
 #Interfaz gráfica
 #Se crea con streamlit
